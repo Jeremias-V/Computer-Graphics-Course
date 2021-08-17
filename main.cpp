@@ -9,6 +9,7 @@
 #include <iostream>
 #include "glsl.h"
 #include <time.h>
+#include "Tree.h"
 
 //-----------------------------------------------------------------------------
 
@@ -22,6 +23,7 @@ protected:
    clock_t time0,time1;
    float timer010;  // timer counting 0->1->0
    bool bUp;        // flag if counting up or down.
+   Tree TestTree;
 
 
 public:
@@ -34,48 +36,27 @@ public:
       //timer010 = 0.09; //for screenshot!
       glPushMatrix();
       if (shader) shader->begin();
-         glTranslatef(0, 0, -6);
+         glTranslatef(0, 0, -3.5);
 
-         // Tetera 1 - Izquierda
-         glPushMatrix();
-         glTranslatef(-3.0, 0.0, 0.0);
-         glutSolidTeapot(0.5);
-         glPopMatrix();
-
-         // Tetera 2 - Abajo
-         glPushMatrix();
-         glTranslatef(0.0, -3.0, 0.0);
-         glutSolidTeapot(0.5);
-         glPopMatrix();
-
-         // Tetera 3 - Derecha
+         // Tetera - Derecha
          glPushMatrix();
          glTranslatef(3.0, 0.0, 0.0);
          glutSolidTeapot(0.5);
          glPopMatrix();
 
-         // Triangulo - Arriba
+         // Arbol - Izquierda
          glPushMatrix();
-         glTranslatef(0.0, 2.0, 1.0);
+         TestTree.DrawTree(-3.0, 0, 0);
+         glPopMatrix();
+
+         // Malla - Arriba
+         glPushMatrix();
+         glTranslatef(0.0, 1.0, 0.0);
          glBegin(GL_TRIANGLES);
-         glVertex3f(0,1,0);
-         glVertex3f(-0.7,0,0);
-         glVertex3f(0.7,0,0);
+         glVertex3f(0, 1, 0);
+         glVertex3f(-1, 0, 0);
+         glVertex3f(1, 0, 0);
          glEnd();
-         glPopMatrix();
-
-         // Cubo - Superior Derecha
-         glPushMatrix();
-         glTranslatef(3.0, 3.0, 0.0);
-         glRotatef(45, 0.0, 0.0, 1.0);
-         glutSolidCube(1);
-         glPopMatrix();
-
-         // Cubo - Superior Izquierda
-         glPushMatrix();
-         glTranslatef(-3.0, 3.0, 0.0);
-         glRotatef(30, 0, 0, 1.0);
-         glutSolidCube(1);
          glPopMatrix();
 
 
@@ -109,6 +90,8 @@ public:
       time0 = clock();
       timer010 = 0.0f;
       bUp = true;
+
+      TestTree = Tree();
 
       DemoLight();
 

@@ -2,31 +2,31 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="glew">
-      <UniqueIdentifier>{774bf6a2-2b8e-47a1-b39e-1eec7baeba14}</UniqueIdentifier>
+      <UniqueIdentifier>{89844449-a811-4036-824f-5429e145e86f}</UniqueIdentifier>
     </Filter>
     <Filter Include="glew\include">
-      <UniqueIdentifier>{b657c543-9920-4894-937f-72bc38a90e84}</UniqueIdentifier>
+      <UniqueIdentifier>{12de04d8-eda6-491d-8239-53c5be391e4a}</UniqueIdentifier>
     </Filter>
     <Filter Include="glew\source">
-      <UniqueIdentifier>{62d806ff-4a41-4a29-80ae-1dff7106c9a8}</UniqueIdentifier>
+      <UniqueIdentifier>{b5b2e13c-f4ec-4884-b741-731aa3becac1}</UniqueIdentifier>
     </Filter>
     <Filter Include="freeglut">
-      <UniqueIdentifier>{d85e7bb9-131b-45f9-acba-533ffa81dc0d}</UniqueIdentifier>
+      <UniqueIdentifier>{56fefb4a-7472-487a-8fb9-677f2c1a5e96}</UniqueIdentifier>
     </Filter>
     <Filter Include="freeglut\include">
-      <UniqueIdentifier>{633d8a5d-515d-468a-8984-3dc1cec423f1}</UniqueIdentifier>
+      <UniqueIdentifier>{ae71915b-6695-455e-883c-a29f5f60480e}</UniqueIdentifier>
     </Filter>
     <Filter Include="freeglut\source">
-      <UniqueIdentifier>{1ae5a414-5f3e-4334-a80b-437ac7fdfc8c}</UniqueIdentifier>
+      <UniqueIdentifier>{2228a8d3-d1b7-4d2c-b117-96d7d964ec7b}</UniqueIdentifier>
     </Filter>
     <Filter Include="cwc">
-      <UniqueIdentifier>{1671b8a5-4632-48d9-ad55-eacdb63e7012}</UniqueIdentifier>
+      <UniqueIdentifier>{9fe236fa-69c8-4bc9-a0ee-c872d0ccdd42}</UniqueIdentifier>
     </Filter>
     <Filter Include="cwc\include">
-      <UniqueIdentifier>{8e360a57-623f-412e-a5d7-4f728d9cae22}</UniqueIdentifier>
+      <UniqueIdentifier>{fa20069b-db21-4e0f-a795-757063a9760a}</UniqueIdentifier>
     </Filter>
     <Filter Include="cwc\source">
-      <UniqueIdentifier>{a683d2fa-970f-4104-b851-9746e44d20c7}</UniqueIdentifier>
+      <UniqueIdentifier>{dc195ffd-5c6b-4f33-93ed-0ddf312b7533}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -69,6 +69,7 @@
     <ClInclude Include="cwc\include\glWindow.h">
       <Filter>cwc\include</Filter>
     </ClInclude>
+    <ClInclude Include="Tree.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glew\source\glew.c">
@@ -153,6 +154,7 @@
       <Filter>cwc\source</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Tree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="freeglut\source\freeglutdll.def">
