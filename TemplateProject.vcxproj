@@ -103,6 +103,7 @@
     <ClInclude Include="glew\include\Gl\glxew.h" />
     <ClInclude Include="glew\include\Gl\wglew.h" />
     <ClInclude Include="Tree.h" />
+    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cwc\source\glApplication.cpp" />
@@ -134,6 +135,7 @@
     <ClCompile Include="glew\source\glew.c" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Tree.cpp" />
+    <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="freeglut\source\freeglutdll.def" />

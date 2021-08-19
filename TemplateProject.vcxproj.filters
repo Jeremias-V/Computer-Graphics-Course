@@ -70,6 +70,7 @@
       <Filter>cwc\include</Filter>
     </ClInclude>
     <ClInclude Include="Tree.h" />
+    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glew\source\glew.c">
@@ -155,6 +156,7 @@
     </ClCompile>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Tree.cpp" />
+    <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="freeglut\source\freeglutdll.def">

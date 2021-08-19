@@ -10,6 +10,7 @@
 #include "glsl.h"
 #include <time.h>
 #include "Tree.h"
+#include "Triangle.h"
 
 //-----------------------------------------------------------------------------
 
@@ -24,6 +25,7 @@ protected:
    float timer010;  // timer counting 0->1->0
    bool bUp;        // flag if counting up or down.
    Tree TestTree;
+   Triangle TestTriangle;
 
 
 public:
@@ -45,19 +47,13 @@ public:
          glPopMatrix();
 
          // Arbol - Izquierda
-         glPushMatrix();
          TestTree.DrawTree(-3.0, 0, 0);
-         glPopMatrix();
 
-         // Malla - Arriba
-         glPushMatrix();
-         glTranslatef(0.0, 1.0, 0.0);
-         glBegin(GL_TRIANGLES);
-         glVertex3f(0, 1, 0);
-         glVertex3f(-1, 0, 0);
-         glVertex3f(1, 0, 0);
-         glEnd();
-         glPopMatrix();
+         // Triangulo - Arriba
+         TestTriangle.Draw(0, 1, 0, 1);
+         TestTriangle.Draw(0, -1, 0, 1);
+         
+         
 
 
       if (shader) shader->end();
@@ -92,6 +88,7 @@ public:
       bUp = true;
 
       TestTree = Tree();
+      TestTriangle = Triangle();
 
       DemoLight();
 
