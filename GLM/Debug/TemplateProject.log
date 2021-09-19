@@ -1,0 +1,9 @@
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  main.cpp
+C:\Users\jerem\Code\Git\Computer-Graphics-Course\GLM\main.cpp(41,1): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\jerem\Code\Git\Computer-Graphics-Course\GLM\main.cpp(48,1): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\jerem\Code\Git\Computer-Graphics-Course\GLM\main.cpp(58,1): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\jerem\Code\Git\Computer-Graphics-Course\GLM\main.cpp(62,1): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\jerem\Code\Git\Computer-Graphics-Course\GLM\main.cpp(66,1): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\jerem\Code\Git\Computer-Graphics-Course\GLM\main.cpp(67,1): warning C4305: 'argument': truncation from 'double' to 'float'
+  TemplateProject.vcxproj -> C:\Users\jerem\Code\Git\Computer-Graphics-Course\GLM\Debug\TemplateProject.exe
