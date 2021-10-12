@@ -128,7 +128,7 @@ public:
       DemoLight();
 
 	}
-
+   
 	virtual void OnResize(int w, int h)
    {
       if(h == 0) h = 1;

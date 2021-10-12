@@ -1,0 +1,14 @@
+﻿cl : línea de comandos warning D9035: La opción 'Gm' está desusada y se quitará en próximas versiones
+  main.cpp
+C:\Users\juans\Documents\Computer-Graphics-Course-master\GLM\main.cpp(70,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\juans\Documents\Computer-Graphics-Course-master\GLM\main.cpp(76,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\juans\Documents\Computer-Graphics-Course-master\GLM\main.cpp(84,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\juans\Documents\Computer-Graphics-Course-master\GLM\main.cpp(84,41): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\juans\Documents\Computer-Graphics-Course-master\GLM\main.cpp(88,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\juans\Documents\Computer-Graphics-Course-master\GLM\main.cpp(92,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\juans\Documents\Computer-Graphics-Course-master\GLM\main.cpp(93,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\juans\Documents\Computer-Graphics-Course-master\GLM\main.cpp(93,41): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\juans\Documents\Computer-Graphics-Course-master\GLM\main.cpp(214,1): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\juans\Documents\Computer-Graphics-Course-master\GLM\main.cpp(220,1): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\juans\Documents\Computer-Graphics-Course-master\GLM\main.cpp(223,1): warning C4305: '-=': truncamiento de 'double' a 'float'
+  TemplateProject.vcxproj -> C:\Users\juans\Documents\Computer-Graphics-Course-master\GLM\Debug\TemplateProject.exe
